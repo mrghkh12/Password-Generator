@@ -13,3 +13,12 @@ body{
     width: 90%;
     max-width: 700px;
 }
+.title{
+    font-weight: 500;
+    font-size: 45px;
+}
+.title span{
+    color: #019f55;
+    border-bottom: 4px solid #019f55;
+    padding-bottom: 7px;
+}
