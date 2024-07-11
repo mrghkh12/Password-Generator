@@ -22,3 +22,45 @@ body{
     border-bottom: 4px solid #019f55;
     padding-bottom: 7px;
 }
+
+.output-section{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background: #fff;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 26px 20px;
+    border-radius: 5px;
+}
+.output-section img{
+    width: 30px;
+    cursor: pointer;
+}
+.output-section #outputPassword{
+    border: 0;
+    outline: 0;
+    font-size: 24px;
+    width: 95%;
+}
+
+.outputBtn{
+    border: 0;
+    outline: 0;
+    background: #019f55;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 26px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.outputBtn img{
+    width: 28px;
+    margin-right: 10px;
+}
