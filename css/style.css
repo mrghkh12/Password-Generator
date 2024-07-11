@@ -36,11 +36,12 @@ body{
     border-radius: 5px;
 }
 .output-section img{
-    width: 30%;
+    width: 30px;
     cursor: pointer;
 }
 .output-section #outputPassword{
     border: 0;
     outline: 0;
     font-size: 24px;
+    width: 95%;
 }
