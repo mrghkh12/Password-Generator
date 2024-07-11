@@ -45,3 +45,22 @@ body{
     font-size: 24px;
     width: 95%;
 }
+
+.outputBtn{
+    border: 0;
+    outline: 0;
+    background: #019f55;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 26px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.outputBtn img{
+    width: 28px;
+    margin-right: 10px;
+}
