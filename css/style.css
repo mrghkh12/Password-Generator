@@ -22,3 +22,25 @@ body{
     border-bottom: 4px solid #019f55;
     padding-bottom: 7px;
 }
+
+.output-section{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background: #fff;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 26px 20px;
+    border-radius: 5px;
+}
+.output-section img{
+    width: 30%;
+    cursor: pointer;
+}
+.output-section #outputPassword{
+    border: 0;
+    outline: 0;
+    font-size: 24px;
+}
