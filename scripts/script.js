@@ -9,6 +9,8 @@ const passwordLenght = 10
 const outputPassword = $.querySelector('#outputPassword')
 const generatorbtn = $.querySelector(".outputBtn")
 
+const copyPasswordBtn = $.querySelector('.output-section img')
+
 let allCharacters = lowerCaseLetters + upperCaseLetters + numbersZeroToNine + selectedSpecialCharacters
 
 let password = ''
@@ -23,3 +25,7 @@ function passwordGenerator(){
     console.log(password);
     outputPassword.value = password
 }
+
+copyPasswordBtn.addEventListener('click' , () =>{
+    navigator.clipboard.writeText(outputPassword.value) 
+})
