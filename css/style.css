@@ -24,7 +24,7 @@ body {
 }
 
 .output-section {
-  width: 100%;
+  width: 90%;
   margin-top: 50px;
   margin-bottom: 30px;
   background: #fff;
@@ -63,4 +63,17 @@ body {
 .outputBtn img {
   width: 28px;
   margin-right: 10px;
+}
+
+@media screen and (max-width: 470px) {
+  .title{
+    font-size: 30px;
+  }
+  .outputBtn{
+    padding: 6px 16px;
+    font-size: 20px;
+  }
+  .output-section{
+    padding: 15px;
+  }
 }
