@@ -1,7 +1,6 @@
 import { passwordPatternCharacters } from "./PasswordPattern.js";
 const $ = document;
 
-console.log(passwordPatternCharacters);
 const passwordLenght = 10;
 
 const outputPassword = $.querySelector("#outputPassword");
@@ -18,9 +17,8 @@ function passwordGenerator() {
   outputPassword.value = "";
   password = "";
   while (password.length < passwordLenght) {
-    password += allCharacters[Math.round(Math.random() * allCharacters.length)];
+    password += passwordPatternCharacters[Math.round(Math.random() * passwordPatternCharacters.length)];
   }
-  console.log(password);
   outputPassword.value = password;
 }
 
