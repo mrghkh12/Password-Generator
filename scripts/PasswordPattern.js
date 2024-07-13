@@ -90,16 +90,21 @@ const selectedSpecialCharacters = [
 let passwordPatternCharacters = "";
 
 function passwordPatternGenerator() {
-  while(lowerCaseLetters.length > 0) {
-    passwordPatternCharacters += lowerCaseLetters.splice(Math.floor(Math.random() * lowerCaseLetters.length),1);
-    passwordPatternCharacters += numbersZeroToNine[Math.floor(Math.random() * numbersZeroToNine.length)];
-    passwordPatternCharacters += selectedSpecialCharacters[Math.floor(Math.random() * selectedSpecialCharacters.length)];
-    passwordPatternCharacters += upperCaseLetters[Math.floor(Math.random() * upperCaseLetters.length)];
+  while (lowerCaseLetters.length > 0) {
+    passwordPatternCharacters += lowerCaseLetters.splice(
+      Math.floor(Math.random() * lowerCaseLetters.length),
+      1
+    );
+    passwordPatternCharacters +=
+      numbersZeroToNine[Math.floor(Math.random() * numbersZeroToNine.length)];
+    passwordPatternCharacters +=
+      selectedSpecialCharacters[
+        Math.floor(Math.random() * selectedSpecialCharacters.length)
+      ];
+    passwordPatternCharacters +=
+      upperCaseLetters[Math.floor(Math.random() * upperCaseLetters.length)];
   }
-
 }
-passwordPatternGenerator()
+passwordPatternGenerator();
 
-
-
- export {passwordPatternCharacters}
+export { passwordPatternCharacters };

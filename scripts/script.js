@@ -8,8 +8,6 @@ const generatorbtn = $.querySelector(".outputBtn");
 
 const copyPasswordBtn = $.querySelector(".output-section img");
 
-
-
 let password = "";
 
 generatorbtn.addEventListener("click", passwordGenerator);
@@ -17,7 +15,10 @@ function passwordGenerator() {
   outputPassword.value = "";
   password = "";
   while (password.length < passwordLenght) {
-    password += passwordPatternCharacters[Math.round(Math.random() * passwordPatternCharacters.length)];
+    password +=
+      passwordPatternCharacters[
+        Math.round(Math.random() * passwordPatternCharacters.length)
+      ];
   }
   outputPassword.value = password;
 }
